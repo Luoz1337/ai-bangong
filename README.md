@@ -65,25 +65,3 @@ node app/tests/compact.test.cjs
 
 默认Chrome路径是 `C:/Program Files/Google/Chrome/Application/chrome.exe`，大部分测试支持 `CHROME_PATH` 指定其他位置。浏览器用固定响应，不调用真实AI，不读取你的Key。加密发布页测试需先用 `ProtectedReleaseTest.java` 从构建产物生成 `work/protected-page.html` 和 `work/bootstrap-test.html`；其余原生及Office测试见 [app/README.md](app/README.md)。
 
-## 上传 GitHub
-
-**先解压，然后上传本目录里的文件和文件夹，不要只把ZIP本身传到仓库。** 建议把APK同时放到GitHub Releases方便下载。
-
-也可以在本目录运行下面前三步，然后按GitHub新建仓库页面提供的远程地址执行关联和push：
-
-```powershell
-git init
-git add .
-git commit -m "Initial import: AI工作 2.3.4"
-```
-
-包内未包含Git历史、账号凭据、签名私钥、真实API Key、手机日志、node_modules和构建缓存。`.gitignore` 已排除这些本地产物。未代替作者选择开源许可证；创建公开仓库不等于授予他人开源授权，请由版权持有人自行决定许可证。
-
-## 文档
-
-- [使用说明](docs/user-guide.md)
-- [源码及详细构建说明](app/README.md)
-- [UI及保护验证边界](docs/protection-and-validation.md)
-- [打包核验记录](docs/package-validation.md)
-
-当前APK与先前交付的2.3.4一致；此次仅整理GitHub工程、依赖锁定及测试依赖路径，不改变APK业务逻辑。未进行本轮手机、真实Key或vivo语音测试。
