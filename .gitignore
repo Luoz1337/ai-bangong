@@ -1,0 +1,29 @@
+# Local secrets and signing material
+.env
+.env.*
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.pem
+*.key
+local.properties
+# Dependencies and generated artifacts
+node_modules/
+build/
+work/
+outputs/
+__pycache__/
+*.pyc
+*.class
+*.dex
+*.log
+mapping.txt
+BuildSecrets.java
+*.apk
+!releases/AI-work-v2.3.4.apk
+# Editor/OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
