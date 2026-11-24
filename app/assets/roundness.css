@@ -1,0 +1,11 @@
+/* Rounder surfaces only: keep colors, spacing, type, and layout unchanged. */
+button,.primary,.secondary,.icon-button,.small,.chat-composer .primary,.chat-composer .chat-search,.chat-composer .voice-btn{border-radius:999px}
+.card,.workflow,.history,.chat-ai .result .card{border-radius:24px}
+.field input,.field select,.field textarea,input:not([type=checkbox]),textarea,.chat-ai .review-input{border-radius:18px}
+.chat-composer .compose-box{border-radius:28px}
+.chat-user{border-radius:24px 24px 12px 24px}
+.chat-ai .optimized,.chat-ai .error,.table-wrap,.attachment{border-radius:20px}
+.chat-avatar,.chat-header .chat-avatar{border-radius:16px}
+.chat-welcome-icon{border-radius:24px}
+.badge,.pill,.chat-file-names span{border-radius:999px}
+#toast{border-radius:18px}

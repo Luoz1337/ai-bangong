@@ -1,0 +1,13 @@
+/* Visual feedback only: no spacing, sizing, wording or business changes. */
+:root{--motion-fast:140ms;--motion-normal:240ms;--motion-ease:cubic-bezier(.22,1,.36,1)}
+button,a,input,textarea,summary{touch-action:manipulation}
+button{transition:background-color 180ms ease,border-color 180ms ease,color 180ms ease,box-shadow 180ms ease,transform var(--motion-fast) var(--motion-ease)}
+button:active:not(:disabled){transform:scale(.975)}
+input,textarea,.compose-box,.field input,.field select{transition:border-color 180ms ease,background-color 180ms ease,box-shadow 180ms ease}
+input[type=checkbox]:before{transition:left 200ms var(--motion-ease),background-color 180ms ease}
+nav button.active svg{transition:background-color 180ms ease,color 180ms ease}
+.skill-card,.workflow,.history,.icon-button,.secondary{transition:border-color 180ms ease,background-color 180ms ease,transform var(--motion-fast) var(--motion-ease)}
+@media(hover:hover){.workflow:hover,.history:hover,.secondary:hover{background-color:#203450}.icon-button:hover{background-color:#1b2a43}}
+#toast{display:block;visibility:hidden;opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity 180ms ease,transform 220ms var(--motion-ease),visibility 0s linear 220ms}
+#toast.show{visibility:visible;opacity:1;transform:translateY(0);transition:opacity 180ms ease,transform 220ms var(--motion-ease),visibility 0s}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important;scroll-behavior:auto!important}button:active:not(:disabled){transform:none}#toast,#toast.show{transform:none}}

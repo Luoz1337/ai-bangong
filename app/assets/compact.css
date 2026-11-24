@@ -1,0 +1,14 @@
+/* Chat-only compact spacing. Keep the theme, pill radii and existing controls. */
+.chat-composer{padding:4px 10px 6px}
+.chat-composer .compose-box{padding:3px 10px}
+.chat-composer .compose-header{display:grid;grid-template-columns:minmax(44px,1fr) auto auto;grid-gap:4px;gap:4px}
+.chat-composer .chat-skill,.chat-composer .chat-example{min-width:44px;min-height:44px;padding:2px 3px}
+.chat-composer .chat-skill{overflow:hidden}
+.chat-composer .chat-skill strong{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chat-composer .chat-skill>span{flex:none}
+.chat-composer .chat-search{padding:4px 6px}
+.chat-composer textarea{min-height:38px;max-height:112px;line-height:1.5;padding:4px 2px}
+.chat-composer .compose-actions{padding-top:0;gap:4px}
+.chat-composer .attach-btn,.chat-composer .primary{min-width:44px;min-height:44px}
+.chat-composer .primary{padding:6px 14px}
+.chat-composer .attachment button{min-width:44px;min-height:44px}
